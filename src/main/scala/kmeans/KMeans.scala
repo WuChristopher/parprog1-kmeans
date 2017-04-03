@@ -43,7 +43,7 @@ class KMeans {
   }
 
   def classify(points: GenSeq[Point], means: GenSeq[Point]): GenMap[Point, GenSeq[Point]] = {
-    val map = points groupBy (x => findClosest(x, means))
+    val map: GenMap[Point, GenSeq[Point]] = points groupBy (x => findClosest(x, means))
     val meansMap = means.map(e => (e, Nil)).toMap
     for {
       (k, v) <- meansMap
