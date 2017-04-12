@@ -60,3 +60,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+.idea/dbnavigator.xml
+.idea/vcs.xml
+project/project/
